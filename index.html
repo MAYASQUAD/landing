@@ -10,7 +10,12 @@
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
+	
+	<link rel="stylesheet" href="https://assets.sendinblue.com/component/form/2ef8d8058c0694a305b0.css">
+	<link rel="stylesheet" href="https://assets.sendinblue.com/component/clickable/b056d6397f4ba3108595.css">
+	<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+
+	
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -606,22 +611,74 @@
 
         <div class="row no-gutters block-9" >
           <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-5 contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Votre nom">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Votre email">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Votre projet">
-              </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Votre demande"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Envoyer Message" class="btn btn-primary py-3 px-5">
-              </div>
+            <form class="bg-light p-5 contact-form" id="sib-form"  method="POST" action="https://sibforms.com/serve/MUIEADWEUy1BUlf_ATv90_MUATE7RcVD1EA-6x2nY9vvGFXYNEZcyoY3jnjaFrbgr3hXi1S3At74WOyJe-SwomGpJbdLJpiMKPyKvL8OTeAs9kpsV068byG6UuBmjY9GQ_x8Y55n4cB61tgaTfIXcTMlpFdPMm47zezr98rrEIJT-UjSKTU0Ubq8TLeS5EHYCPljEMa_YGyqEkl3">
+				<div style="padding: 8px 0;">
+						<div class="sib-input sib-form-block">
+						  <div class="form__entry entry_block">
+							<div class="form__label-row ">
+			  
+							  <div class="entry__field">
+								<input class="input" maxlength="200" type="text" id="NOM" name="NOM" autocomplete="off" placeholder="Votre nom" data-required="true" required />
+							  </div>
+							</div>
+			  
+							<label class="entry__error entry__error--primary" style=" font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-width:px; border-color:#ff4949;">
+							</label>
+						  </div>
+						</div>
+					  </div>
+					  <div style="padding: 8px 0;">
+						<div class="sib-input sib-form-block">
+						  <div class="form__entry entry_block">
+							<div class="form__label-row ">
+			  
+							  <div class="entry__field">
+								<input class="input" maxlength="200" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Votre email" data-required="true" required />
+							  </div>
+							</div>
+			  
+							<label class="entry__error entry__error--primary" style=" font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-width:px; border-color:#ff4949;">
+							</label>
+						  </div>
+						</div>
+					  </div>
+					  <div style="padding: 8px 0;">
+						<div class="sib-input sib-form-block">
+						  <div class="form__entry entry_block">
+							<div class="form__label-row ">
+			  
+							  <div class="entry__field">
+								<input class="input" maxlength="200" type="text" id="PROJET" name="PROJET" autocomplete="off" placeholder="Votre projet" data-required="true" required />
+							  </div>
+							</div>
+			  
+							<label class="entry__error entry__error--primary" style=" font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-width:px; border-color:#ff4949;">
+							</label>
+						  </div>
+						</div>
+					  </div>
+					  <div style="padding: 8px 0;">
+						<div class="sib-input sib-form-block">
+						  <div class="form__entry entry_block">
+							<div class="form__label-row ">
+			  
+							  <div class="entry__field">
+								<textarea rows="6" class="input" maxlength="500" id="MESSAGE" name="MESSAGE" autocomplete="off" placeholder="Votre demande" data-required="true" required></textarea>
+							  </div>
+							</div>
+			  
+							<label class="entry__error entry__error--primary" style=" font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-width:px; border-color:#ff4949;">
+							</label>
+						  </div>
+						</div>
+					  </div>
+
+					  <input type="text" name="email_address_check" value="" class="input--hidden">
+					  <input type="hidden" name="locale" value="fr">
+					  <input type="hidden" name="html_type" value="simple">
+			  		<div class="form-group" style="margin-left: 15px; margin-top: 10px">
+					<input type="submit" value="Envoyer" class="btn btn-primary py-3 px-5">
+				  </div>
             </form>
           
           </div>
