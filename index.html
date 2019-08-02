@@ -20,7 +20,16 @@
     
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Head -->
+<script src="https://wchat.freshchat.com/js/widget.js"></script>
+<!-- Head -->
+<script>
+  window.fcWidget.init({
+    token: "WEB_CHAT_TOKEN",
+    host: "https://wchat.freshchat.com"
+  });
+</script>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
@@ -49,7 +58,8 @@
 	  <section id="home-section" class="hero">
 	  	<h3 class="vr">Bienvenue chez MayaSquad</h3>
 		  <div class="home-slider js-fullheight owl-carousel">
-	      <div class="slider-item js-fullheight">
+		  
+			<div class="slider-item js-fullheight">
 	      	<div class="overlay"></div>
 	        <div class="container-fluid p-0">
 	          <div class="row d-md-flex no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
@@ -58,10 +68,9 @@
 	          	</div>
 		          <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
-		          		<span class="subheading">Bienvenue chez MayaSquad</span>
-			            <h1 class="mb-4 mt-3">La complémentarité est notre <span>Force</span></h1>
-			            <p>Des compétences complémentaires, une équipe flexible et sur mesure pour vos projets digitaux.</p>
-			            
+						<span class="subheading">Bienvenue chez MayaSquad</span>
+						<h1 class="mb-4 mt-3"><span>L'agence</span> d'un genre <span>nouveau</span> !</h1>
+			            <p>Une <span style="color: #31de79">squad</span> d'indépendants qualifiés, pour repondre à vos besoins, au meilleur prix.</p>
 			            <p><a href="#contact-section" class="btn btn-primary px-5 py-3 mt-3">Get in touch</a></p>
 		            </div>
 		          </div>
@@ -79,14 +88,15 @@
 		          <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 		          		<span class="subheading">Bienvenue chez MayaSquad</span>
-			            <h1 class="mb-4 mt-3"><span>Agence</span> d'un genre <span>nouveau</span> !</h1>
-			            <p>Une <span style="color: #31de79">squad</span>, construite sur mesure, pour vos besoins.</p>
-			            <p><a href="#contact-section" class="btn btn-primary px-5 py-3 mt-3">Get in touch</a></p>
+						<h1 class="mb-4 mt-3">La complémentarité est notre <span>Force</span></h1>
+						<p>Des compétences complémentaires, une équipe flexible et sur mesure pour vos projets digitaux.</p>
+						<p><a href="#contact-section" class="btn btn-primary px-5 py-3 mt-3">Get in touch</a></p>
 		            </div>
 		          </div>
 				</div>
 	        </div>
 		  </div>
+		  
 		</div>
 		<a href="#about-section" ><div class="arrow bounce"></div></a>
     </section>
@@ -233,7 +243,7 @@
 	    				<div class="row justify-content-start pb-3">
 			          <div class="col-md-12 heading-section ftco-animate">
 			          	<span class="subheading">Bienvenue chez MayaSquad</span>
-			            <h2 class="mb-4" style="font-size: 34px; text-transform: none;">Une agence d'un genre nouveau</h2>
+			            <h2 class="mb-4" style="font-size: 34px; text-transform: none;">L'agence d'un genre nouveau</h2>
 			            <p>Confiez-nous vos problématiques digitales de bout en bout.</p>
 						<p>Nous analyserons finement, ensemble, votre besoin pour vous proposer la solution la plus adaptée. Nous composerons la meilleure squad parmi notre communauté de freelances qualifiés. </p>
 						<p>Votre projet sera géré de son expression à sa livraison et sa maintenance, à travers une communication et une facturation unique.</p>
@@ -731,7 +741,7 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-
+  
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -748,6 +758,15 @@
   <!-- <script src="js/google-map.js"></script> -->
   
   <script src="js/main.js"></script>
-    
+	
+  <script>
+	function initFreshChat() {
+	  window.fcWidget.init({
+		token: "1efe53e6-bd9f-4e72-98c1-4f3dbbb7c6b4",
+		host: "https://wchat.freshchat.com"
+	  });
+	}
+	function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+  </script>
   </body>
 </html>
