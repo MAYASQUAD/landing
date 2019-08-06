@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-	<title>Maya Squad</title>
+	<title>MayaSquad</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="images/circle-outline-16.ico" />
 
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
-
+	
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 
@@ -32,6 +33,16 @@
 	<script src="https://wchat.freshchat.com/js/widget.js"></script>
 	<!-- Head -->
 	<script>
+
+		function playItHere(e, link) {
+			var audio = document.createElement("audio");
+			var src = document.createElement("source");
+			src.src = link.href;
+			audio.appendChild(src);
+			audio.play();
+			e.preventDefault();
+		}
+
 		window.fcWidget.init({
 			token: "WEB_CHAT_TOKEN",
 			host: "https://wchat.freshchat.com"
@@ -78,10 +89,10 @@
 							<div class="one-forth d-flex js-fullheight align-items-center ftco-animate"
 								data-scrollax=" properties: { translateY: '70%' }">
 								<div class="text">
-									<span class="subheading">Bienvenue chez MayaSquad</span>
+									<span class="subheading"><strong>Bienvenue chez MayaSquad</strong></span>
 									<h1 class="mb-4 mt-3"><span>L'agence</span> d'un genre <span>nouveau</span> !</h1>
-									<p>Une <span style="color: #31de79">squad</span> d'indépendants qualifiés, pour repondre à vos
-										besoins, au meilleur prix.</p>
+									<p style="color: #ffffff"><strong>Une <span style="color: #31de79">squad</span> d'indépendants qualifiés, pour repondre à vos
+										besoins, au meilleur prix.</strong></p>
 									<p><a href="#contact-section" class="btn btn-primary px-5 py-3 mt-3">Parlez-nous de votre projet</a>
 									</p>
 								</div>
@@ -101,9 +112,9 @@
 							<div class="one-forth d-flex js-fullheight align-items-center ftco-animate"
 								data-scrollax=" properties: { translateY: '70%' }">
 								<div class="text">
-									<span class="subheading">Bienvenue chez MayaSquad</span>
-									<h1 class="mb-4 mt-3">La complémentarité est notre <span>Force</span></h1>
-									<p>Des compétences complémentaires, une équipe flexible et sur mesure pour vos projets digitaux.</p>
+									<span class="subheading"><strong>Bienvenue chez MayaSquad</strong></span>
+									<h1 class="mb-4 mt-3"><strong>La complémentarité est notre <span>Force</span></strong></h1>
+									<p style="color: #ffffff">Des compétences complémentaires, une équipe flexible et sur mesure pour vos projets digitaux.</p>
 									<p><a href="#contact-section" class="btn btn-primary px-5 py-3 mt-3">Parlez-nous de votre projet</a>
 									</p>
 								</div>
@@ -141,7 +152,14 @@
 									projets de la même manière qu'une agence, au bon prix :)</p>
 								<p>Votre projet sera géré de son expression à sa livraison et sa maintenance, à travers une
 									communication et une facturation unique.</p>
-								<p style="font-size: 12px">*<i>Squad : Equipe pluridisciplinaire chargée d'une mission</i></p>
+									<hr/>
+								<p>
+									<h4>
+										<a onclick="playItHere(event, this)" href="https://voix.larousse.fr/anglais/15768.mp3">
+											<i class='fas fa-play' style='font-size:24px; display: inline;'></i>
+											</a> Squad<span class="Phonetique"> <a onclick="playItHere(event, this)" href="https://voix.larousse.fr/anglais/15768.mp3">[skwɒd]</a></span> : <span style="color: #6c757d; font-size: 16px;">Petite équipe autonome chargée d'une mission précise</p>
+									</h4>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -149,7 +167,6 @@
 			</div>
 		</div>
 	</section>
-
 	<section class="ftco-section ftco-no-pb ftco-no-pt ftco-services bg-light" id="services-section">
 		<div class="container">
 			<div class="row no-gutters">
@@ -192,7 +209,7 @@
 							<h2 class="mb-4">Développement web</h2>
 							<p>Vous avez un projet d'application web ? Vous avez une idée de produit mais ne disposez d'aucune
 								compétences techniques ? </p>
-							<p>Chez Maya Squad, nous vous accompagnons, et concevons la solution la plus adatpée à vos besoins.</p>
+							<p>Chez MayaSquad, nous vous accompagnons, et concevons la solution la plus adatpée à vos besoins.</p>
 							<p><a href="#" class="btn btn-primary px-4 py-3">En savoir plus</a></p>
 						</div>
 
