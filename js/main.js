@@ -88,7 +88,7 @@
 	    loop:true,
 	    autoplay: true,
 		margin:0,
-		autoplayTimeout: 8000, //DELAY SLIDER
+		autoplayTimeout: 10000, // DELAY SLIDER
 	    animateOut: 'fadeOut',
 	    animateIn: 'fadeIn',
 	    nav:false,
